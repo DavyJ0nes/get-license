@@ -39,6 +39,7 @@ func main() {
 	fmt.Fprintln(os.Stdout, licenseContent)
 }
 
+// getLicense gets a string representation of the required license file
 func getLicense(URL string) (string, error) {
 	resp, err := http.Get(URL)
 	if err != nil {
@@ -57,6 +58,7 @@ func getLicense(URL string) (string, error) {
 	return licenseText, nil
 }
 
+// getLicenseURL is a simple parser taking user arguments and returning a URL.
 func getLicenseURL(license string) (string, error) {
 	baseURL := "https://choosealicense.com/licenses/"
 

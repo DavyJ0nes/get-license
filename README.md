@@ -1,4 +1,5 @@
 # get-license
+[![Go Report Card](https://goreportcard.com/badge/github.com/DavyJ0nes/get-license)](https://goreportcard.com/report/github.com/DavyJ0nes/get-license)
 
 ## Description
 
@@ -17,7 +18,7 @@ Currently the following licenses are available:
 
 ```shell
 # get apache license
-getlicense -name Apache >> LICENSE
+get-license -license Apache >> LICENSE
 ```
 
 ## Installation
@@ -25,7 +26,7 @@ getlicense -name Apache >> LICENSE
 If you have Go installed then you can run the following:
 
 ```shell
-go get -u github.com/davyj0mes/get-license
+go get -u github.com/davyj0nes/get-license
 ```
 
 Binaries for Windows, Linux and OSX can be found in [releases](./releases)
